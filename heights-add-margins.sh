@@ -5,7 +5,7 @@
 # Dependencies: ImageMagick
 
 cd
-list=`find /Volumes/Digital-Library/current-projects/born-digital_BC-pubs/heights-working -type d`
+list=`find /Volumes/Digital-Library/current-projects/born-digital_BC-pubs/heights-working/tifs -type d`
 echo "list=$list"
 for directory in $list; do
 echo "directory=$directory"
