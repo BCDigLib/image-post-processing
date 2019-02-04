@@ -1,0 +1,6 @@
+# This renames files consecutively, starting at 0000
+# For files sent to DDD/Veridian, fname should be: designated-prefix_YYYYMMDD_##
+# E.g., when fname = bcheights_20180205_01, resulting files will be bcheights_20180205_01_0000.tiff, etc.
+# Dependencies: rename, available at http://plasmasturm.org/code/rename/
+
+rename -N 0000 -X -e '$_ = "[fname]_$N"' *
