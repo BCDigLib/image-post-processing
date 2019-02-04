@@ -10,6 +10,6 @@ echo "list=$list"
 for directory in $list; do
 echo "directory=$directory"
 cd $directory
-mogrify -format tif -gravity center -background white -extent 110x104% *.tif
+mogrify -format tif -gravity center -background white -extent 110x104% *.tif*
 cd
 done
